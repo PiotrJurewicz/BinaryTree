@@ -55,6 +55,7 @@ CMAKE_BINARY_DIR = /home/paro/Pulpit/WłasneProjekty/DrzewoBinarne/CMakeFiles
 # The main recursive "all" target.
 all: CMakeFiles/Main.dir/all
 all: CMakeFiles/Tests.dir/all
+all: CMakeFiles/googletest.dir/all
 
 .PHONY : all
 
@@ -66,6 +67,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/Main.dir/clean
 clean: CMakeFiles/Tests.dir/clean
+clean: CMakeFiles/googletest.dir/clean
 
 .PHONY : clean
 
@@ -100,7 +102,7 @@ CMakeFiles/Main.dir/clean:
 # Target rules for target CMakeFiles/Tests.dir
 
 # All Build rule for target.
-CMakeFiles/Tests.dir/all:
+CMakeFiles/Tests.dir/all: CMakeFiles/googletest.dir/all
 	$(MAKE) -f CMakeFiles/Tests.dir/build.make CMakeFiles/Tests.dir/depend
 	$(MAKE) -f CMakeFiles/Tests.dir/build.make CMakeFiles/Tests.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/paro/Pulpit/WłasneProjekty/DrzewoBinarne/CMakeFiles/CMakeFiles --progress-num=4,5 "Built target Tests"
@@ -108,7 +110,7 @@ CMakeFiles/Tests.dir/all:
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/paro/Pulpit/WłasneProjekty/DrzewoBinarne/CMakeFiles/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paro/Pulpit/WłasneProjekty/DrzewoBinarne/CMakeFiles/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/paro/Pulpit/WłasneProjekty/DrzewoBinarne/CMakeFiles/CMakeFiles 0
 .PHONY : CMakeFiles/Tests.dir/rule
@@ -122,6 +124,33 @@ Tests: CMakeFiles/Tests.dir/rule
 CMakeFiles/Tests.dir/clean:
 	$(MAKE) -f CMakeFiles/Tests.dir/build.make CMakeFiles/Tests.dir/clean
 .PHONY : CMakeFiles/Tests.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/googletest.dir
+
+# All Build rule for target.
+CMakeFiles/googletest.dir/all:
+	$(MAKE) -f CMakeFiles/googletest.dir/build.make CMakeFiles/googletest.dir/depend
+	$(MAKE) -f CMakeFiles/googletest.dir/build.make CMakeFiles/googletest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/paro/Pulpit/WłasneProjekty/DrzewoBinarne/CMakeFiles/CMakeFiles --progress-num=6,7,8,9,10,11,12,13 "Built target googletest"
+.PHONY : CMakeFiles/googletest.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/googletest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paro/Pulpit/WłasneProjekty/DrzewoBinarne/CMakeFiles/CMakeFiles 8
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/googletest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/paro/Pulpit/WłasneProjekty/DrzewoBinarne/CMakeFiles/CMakeFiles 0
+.PHONY : CMakeFiles/googletest.dir/rule
+
+# Convenience name for target.
+googletest: CMakeFiles/googletest.dir/rule
+
+.PHONY : googletest
+
+# clean rule for target.
+CMakeFiles/googletest.dir/clean:
+	$(MAKE) -f CMakeFiles/googletest.dir/build.make CMakeFiles/googletest.dir/clean
+.PHONY : CMakeFiles/googletest.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

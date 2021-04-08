@@ -2,3 +2,4 @@
 /home/paro/Pulpit/WłasneProjekty/DrzewoBinarne/CMakeFiles/CMakeFiles/edit_cache.dir
 /home/paro/Pulpit/WłasneProjekty/DrzewoBinarne/CMakeFiles/CMakeFiles/Main.dir
 /home/paro/Pulpit/WłasneProjekty/DrzewoBinarne/CMakeFiles/CMakeFiles/Tests.dir
+/home/paro/Pulpit/WłasneProjekty/DrzewoBinarne/CMakeFiles/CMakeFiles/googletest.dir

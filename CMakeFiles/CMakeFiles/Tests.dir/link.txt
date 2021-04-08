@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/Tests.dir/uts/ut.cpp.o  -o ../build/Tests 
+/usr/bin/c++     CMakeFiles/Tests.dir/uts/ut.cpp.o  -o ../build/Tests  external/gtest/src/googletest-build/lib/libgtest.a external/gtest/src/googletest-build/lib/libgtest_main.a -lpthread 

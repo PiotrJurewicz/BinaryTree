@@ -136,6 +136,19 @@ Tests/fast:
 	$(MAKE) -f CMakeFiles/Tests.dir/build.make CMakeFiles/Tests.dir/build
 .PHONY : Tests/fast
 
+#=============================================================================
+# Target rules for targets named googletest
+
+# Build rule for target.
+googletest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 googletest
+.PHONY : googletest
+
+# fast build rule for target.
+googletest/fast:
+	$(MAKE) -f CMakeFiles/googletest.dir/build.make CMakeFiles/googletest.dir/build
+.PHONY : googletest/fast
+
 cpp/BinaryTree.o: cpp/BinaryTree.cpp.o
 
 .PHONY : cpp/BinaryTree.o
@@ -227,6 +240,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... Main"
 	@echo "... Tests"
+	@echo "... googletest"
 	@echo "... cpp/BinaryTree.o"
 	@echo "... cpp/BinaryTree.i"
 	@echo "... cpp/BinaryTree.s"

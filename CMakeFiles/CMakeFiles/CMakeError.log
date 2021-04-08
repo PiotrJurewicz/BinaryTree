@@ -1,0 +1,62 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/paro/Pulpit/WłasneProjekty/DrzewoBinarne/CMakeFiles/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_0a215/fast && gmake[1]: Wejście do katalogu '/home/paro/Pulpit/WłasneProjekty/DrzewoBinarne/CMakeFiles/CMakeFiles/CMakeTmp'
+/usr/bin/gmake -f CMakeFiles/cmTC_0a215.dir/build.make CMakeFiles/cmTC_0a215.dir/build
+gmake[2]: Wejście do katalogu '/home/paro/Pulpit/WłasneProjekty/DrzewoBinarne/CMakeFiles/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0a215.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_0a215.dir/src.c.o   -c /home/paro/Pulpit/WłasneProjekty/DrzewoBinarne/CMakeFiles/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_0a215
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0a215.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_0a215.dir/src.c.o  -o cmTC_0a215 
+/usr/bin/ld: CMakeFiles/cmTC_0a215.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/cmTC_0a215.dir/build.make:87: cmTC_0a215] Błąd 1
+gmake[2]: Opuszczenie katalogu '/home/paro/Pulpit/WłasneProjekty/DrzewoBinarne/CMakeFiles/CMakeFiles/CMakeTmp'
+gmake[1]: *** [Makefile:121: cmTC_0a215/fast] Błąd 2
+gmake[1]: Opuszczenie katalogu '/home/paro/Pulpit/WłasneProjekty/DrzewoBinarne/CMakeFiles/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/paro/Pulpit/WłasneProjekty/DrzewoBinarne/CMakeFiles/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_10041/fast && gmake[1]: Wejście do katalogu '/home/paro/Pulpit/WłasneProjekty/DrzewoBinarne/CMakeFiles/CMakeFiles/CMakeTmp'
+/usr/bin/gmake -f CMakeFiles/cmTC_10041.dir/build.make CMakeFiles/cmTC_10041.dir/build
+gmake[2]: Wejście do katalogu '/home/paro/Pulpit/WłasneProjekty/DrzewoBinarne/CMakeFiles/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_10041.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_10041.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_10041
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_10041.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_10041.dir/CheckFunctionExists.c.o  -o cmTC_10041  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/cmTC_10041.dir/build.make:87: cmTC_10041] Błąd 1
+gmake[2]: Opuszczenie katalogu '/home/paro/Pulpit/WłasneProjekty/DrzewoBinarne/CMakeFiles/CMakeFiles/CMakeTmp'
+gmake[1]: *** [Makefile:121: cmTC_10041/fast] Błąd 2
+gmake[1]: Opuszczenie katalogu '/home/paro/Pulpit/WłasneProjekty/DrzewoBinarne/CMakeFiles/CMakeFiles/CMakeTmp'
+
+
+

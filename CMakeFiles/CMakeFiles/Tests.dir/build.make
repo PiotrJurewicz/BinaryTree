@@ -79,6 +79,8 @@ Tests_EXTERNAL_OBJECTS =
 
 ../build/Tests: CMakeFiles/Tests.dir/uts/ut.cpp.o
 ../build/Tests: CMakeFiles/Tests.dir/build.make
+../build/Tests: external/gtest/src/googletest-build/lib/libgtest.a
+../build/Tests: external/gtest/src/googletest-build/lib/libgtest_main.a
 ../build/Tests: CMakeFiles/Tests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/paro/Pulpit/WłasneProjekty/DrzewoBinarne/CMakeFiles/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../build/Tests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Tests.dir/link.txt --verbose=$(VERBOSE)

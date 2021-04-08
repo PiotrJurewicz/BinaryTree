@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/paro/Pulpit/WłasneProjekty/DrzewoBinarne/hpp 
+CXX_INCLUDES = -I/home/paro/Pulpit/WłasneProjekty/DrzewoBinarne/hpp -isystem /home/paro/Pulpit/WłasneProjekty/DrzewoBinarne/CMakeFiles/external/gtest/src/googletest/googletest/include 
 
