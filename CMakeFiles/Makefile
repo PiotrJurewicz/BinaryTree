@@ -123,6 +123,19 @@ Main/fast:
 	$(MAKE) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/build
 .PHONY : Main/fast
 
+#=============================================================================
+# Target rules for targets named Tests
+
+# Build rule for target.
+Tests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Tests
+.PHONY : Tests
+
+# fast build rule for target.
+Tests/fast:
+	$(MAKE) -f CMakeFiles/Tests.dir/build.make CMakeFiles/Tests.dir/build
+.PHONY : Tests/fast
+
 cpp/BinaryTree.o: cpp/BinaryTree.cpp.o
 
 .PHONY : cpp/BinaryTree.o
@@ -177,6 +190,33 @@ cpp/main.cpp.s:
 	$(MAKE) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/cpp/main.cpp.s
 .PHONY : cpp/main.cpp.s
 
+uts/ut.o: uts/ut.cpp.o
+
+.PHONY : uts/ut.o
+
+# target to build an object file
+uts/ut.cpp.o:
+	$(MAKE) -f CMakeFiles/Tests.dir/build.make CMakeFiles/Tests.dir/uts/ut.cpp.o
+.PHONY : uts/ut.cpp.o
+
+uts/ut.i: uts/ut.cpp.i
+
+.PHONY : uts/ut.i
+
+# target to preprocess a source file
+uts/ut.cpp.i:
+	$(MAKE) -f CMakeFiles/Tests.dir/build.make CMakeFiles/Tests.dir/uts/ut.cpp.i
+.PHONY : uts/ut.cpp.i
+
+uts/ut.s: uts/ut.cpp.s
+
+.PHONY : uts/ut.s
+
+# target to generate assembly for a file
+uts/ut.cpp.s:
+	$(MAKE) -f CMakeFiles/Tests.dir/build.make CMakeFiles/Tests.dir/uts/ut.cpp.s
+.PHONY : uts/ut.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -186,12 +226,16 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Main"
+	@echo "... Tests"
 	@echo "... cpp/BinaryTree.o"
 	@echo "... cpp/BinaryTree.i"
 	@echo "... cpp/BinaryTree.s"
 	@echo "... cpp/main.o"
 	@echo "... cpp/main.i"
 	@echo "... cpp/main.s"
+	@echo "... uts/ut.o"
+	@echo "... uts/ut.i"
+	@echo "... uts/ut.s"
 .PHONY : help
 
 
