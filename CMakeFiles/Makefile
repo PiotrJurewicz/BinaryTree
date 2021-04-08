@@ -203,6 +203,33 @@ cpp/main.cpp.s:
 	$(MAKE) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/cpp/main.cpp.s
 .PHONY : cpp/main.cpp.s
 
+uts/BinaryTreeTests.o: uts/BinaryTreeTests.cpp.o
+
+.PHONY : uts/BinaryTreeTests.o
+
+# target to build an object file
+uts/BinaryTreeTests.cpp.o:
+	$(MAKE) -f CMakeFiles/Tests.dir/build.make CMakeFiles/Tests.dir/uts/BinaryTreeTests.cpp.o
+.PHONY : uts/BinaryTreeTests.cpp.o
+
+uts/BinaryTreeTests.i: uts/BinaryTreeTests.cpp.i
+
+.PHONY : uts/BinaryTreeTests.i
+
+# target to preprocess a source file
+uts/BinaryTreeTests.cpp.i:
+	$(MAKE) -f CMakeFiles/Tests.dir/build.make CMakeFiles/Tests.dir/uts/BinaryTreeTests.cpp.i
+.PHONY : uts/BinaryTreeTests.cpp.i
+
+uts/BinaryTreeTests.s: uts/BinaryTreeTests.cpp.s
+
+.PHONY : uts/BinaryTreeTests.s
+
+# target to generate assembly for a file
+uts/BinaryTreeTests.cpp.s:
+	$(MAKE) -f CMakeFiles/Tests.dir/build.make CMakeFiles/Tests.dir/uts/BinaryTreeTests.cpp.s
+.PHONY : uts/BinaryTreeTests.cpp.s
+
 uts/ut.o: uts/ut.cpp.o
 
 .PHONY : uts/ut.o
@@ -247,6 +274,9 @@ help:
 	@echo "... cpp/main.o"
 	@echo "... cpp/main.i"
 	@echo "... cpp/main.s"
+	@echo "... uts/BinaryTreeTests.o"
+	@echo "... uts/BinaryTreeTests.i"
+	@echo "... uts/BinaryTreeTests.s"
 	@echo "... uts/ut.o"
 	@echo "... uts/ut.i"
 	@echo "... uts/ut.s"

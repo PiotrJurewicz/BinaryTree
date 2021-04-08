@@ -6,7 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/paro/Pulpit/WłasneProjekty/DrzewoBinarne/uts/ut.cpp
+../hpp/BinaryTree.hpp
+memory
+-
+tuple
+-
+
+/home/paro/Pulpit/WłasneProjekty/DrzewoBinarne/uts/BinaryTreeTests.cpp
+BinaryTree.hpp
+/home/paro/Pulpit/WłasneProjekty/DrzewoBinarne/uts/BinaryTree.hpp
 gtest/gtest.h
 /home/paro/Pulpit/WłasneProjekty/DrzewoBinarne/uts/gtest/gtest.h
 

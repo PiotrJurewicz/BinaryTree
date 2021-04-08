@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/paro/Pulpit/WłasneProjekty/DrzewoBinarne/uts/BinaryTreeTests.cpp" "/home/paro/Pulpit/WłasneProjekty/DrzewoBinarne/CMakeFiles/CMakeFiles/Tests.dir/uts/BinaryTreeTests.cpp.o"
   "/home/paro/Pulpit/WłasneProjekty/DrzewoBinarne/uts/ut.cpp" "/home/paro/Pulpit/WłasneProjekty/DrzewoBinarne/CMakeFiles/CMakeFiles/Tests.dir/uts/ut.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

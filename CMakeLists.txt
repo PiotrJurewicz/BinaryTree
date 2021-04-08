@@ -7,7 +7,7 @@ include(CMakeFiles/GTest.cmake)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY &{CMAKE_BINARY_DIR}/../../build)
 
 #Tests setup
-add_executable(Tests uts/ut.cpp)
+add_executable(Tests uts/ut.cpp uts/BinaryTreeTests.cpp)
 target_include_directories(Tests PUBLIC hpp)
 target_link_libraries(Tests gtest gtest_main)
 
