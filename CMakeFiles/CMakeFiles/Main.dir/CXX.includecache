@@ -6,5 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/paro/Pulpit/WłasneProjekty/DrzewoBinarne/cpp/main.cpp
+../hpp/BinaryTree.hpp
+memory
+-
+tuple
+-
+
+/home/paro/Pulpit/WłasneProjekty/DrzewoBinarne/cpp/BinaryTree.cpp
+BinaryTree.hpp
+/home/paro/Pulpit/WłasneProjekty/DrzewoBinarne/cpp/BinaryTree.hpp
 

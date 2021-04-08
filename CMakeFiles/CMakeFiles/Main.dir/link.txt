@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/Main.dir/cpp/main.cpp.o  -o ../build/Main 
+/usr/bin/c++     CMakeFiles/Main.dir/cpp/main.cpp.o CMakeFiles/Main.dir/cpp/BinaryTree.cpp.o  -o ../build/Main 

@@ -123,6 +123,33 @@ Main/fast:
 	$(MAKE) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/build
 .PHONY : Main/fast
 
+cpp/BinaryTree.o: cpp/BinaryTree.cpp.o
+
+.PHONY : cpp/BinaryTree.o
+
+# target to build an object file
+cpp/BinaryTree.cpp.o:
+	$(MAKE) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/cpp/BinaryTree.cpp.o
+.PHONY : cpp/BinaryTree.cpp.o
+
+cpp/BinaryTree.i: cpp/BinaryTree.cpp.i
+
+.PHONY : cpp/BinaryTree.i
+
+# target to preprocess a source file
+cpp/BinaryTree.cpp.i:
+	$(MAKE) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/cpp/BinaryTree.cpp.i
+.PHONY : cpp/BinaryTree.cpp.i
+
+cpp/BinaryTree.s: cpp/BinaryTree.cpp.s
+
+.PHONY : cpp/BinaryTree.s
+
+# target to generate assembly for a file
+cpp/BinaryTree.cpp.s:
+	$(MAKE) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/cpp/BinaryTree.cpp.s
+.PHONY : cpp/BinaryTree.cpp.s
+
 cpp/main.o: cpp/main.cpp.o
 
 .PHONY : cpp/main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Main"
+	@echo "... cpp/BinaryTree.o"
+	@echo "... cpp/BinaryTree.i"
+	@echo "... cpp/BinaryTree.s"
 	@echo "... cpp/main.o"
 	@echo "... cpp/main.i"
 	@echo "... cpp/main.s"
