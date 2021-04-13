@@ -4,7 +4,7 @@
 class binaryTreeTest : public ::testing::Test
 {
 public:
-    BinaryTree binaryTree;
+    BinaryTree<int> binaryTree;
 };
 
 //Sugested test name: When[something]Than[something]Is[something]

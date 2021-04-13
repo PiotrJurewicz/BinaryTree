@@ -1,7 +1,6 @@
 file(REMOVE_RECURSE
   "../build/Tests"
   "../build/Tests.pdb"
-  "CMakeFiles/Tests.dir/cpp/BinaryTree.cpp.o"
   "CMakeFiles/Tests.dir/uts/BinaryTreeTests.cpp.o"
   "CMakeFiles/Tests.dir/uts/ut.cpp.o"
 )
