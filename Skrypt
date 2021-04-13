@@ -1,0 +1,3 @@
+#! /bin/bash
+
+cd ./CMakeFiles && cmake ./.. && make && cd ..
