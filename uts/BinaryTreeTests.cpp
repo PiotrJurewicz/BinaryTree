@@ -9,7 +9,15 @@ public:
 
 //Sugested test name: When[something]Than[something]Is[something]
 
-TEST_F(binaryTreeTest, WhenAdd0ThanLargerAndSmalerThanValueThanDepthIs2)
+TEST_F(binaryTreeTest, WhenAdd0ThanSmallerAndSmallerThanValueThanDepthIs3)
+{
+    binaryTree.addNode(0);
+    binaryTree.addNode(-1);
+    binaryTree.addNode(-2);
+    ASSERT_EQ(3, binaryTree.returnDepth());
+}
+
+TEST_F(binaryTreeTest, WhenAdd0ThanLargerAndSmallerThanValueThanDepthIs2)
 {
     binaryTree.addNode(0);
     binaryTree.addNode(1);
@@ -17,7 +25,7 @@ TEST_F(binaryTreeTest, WhenAdd0ThanLargerAndSmalerThanValueThanDepthIs2)
     ASSERT_EQ(2, binaryTree.returnDepth());
 }
 
-TEST_F(binaryTreeTest, WhenAdd0ThanSmalerAndLargerThanValueThanDepthIs2)
+TEST_F(binaryTreeTest, WhenAdd0ThanSmallerAndLargerThanValueThanDepthIs2)
 {
     binaryTree.addNode(0);
     binaryTree.addNode(-1);
